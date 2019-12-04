@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Weather Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=cyrillic,cyrillic-ext"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="mainForm" class="main-form">
+        <div class="form-info">
+            <div class="form-info-front">
+                <img :src="iconTop" alt="main weather icon" class="form-icon">
+                <h1 class='form-title'>Rostov-on-Don</h1>
+                <span class="temp">{{mainTemp}}</span>
+
+            </div>
+            <div class="form-info-back">
+                <span class="temp"> <span class="fas fa-temperature-low"> </span> {{minTemp}}</span>
+                <span class="temp"> <span class="fas fa-temperature-high"></span> {{maxTemp}}</span>
+                <span class="temp"> <span class="fas fa-wind"></span> {{windSpeed}}</span>
+                <span class="temp"> <span class="fas fa-thermometer-full"></span> {{pressure}}</span>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/5654e812fa.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="script.js"></script>
+
+</html>
